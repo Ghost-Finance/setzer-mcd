@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -e
+name=spacex
+
+# TODO: Add new sources to extract data.
+setzer x-price "$1" $name:craft
