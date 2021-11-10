@@ -13,7 +13,7 @@ fi
 
 case $src in
   craft) {
-    json=$(curl -sS "http://localhost:3000/dev/craft?company=${base}")
+    json=$(curl -sS "http://g-scrapers.herokuapp.com/v1/craft?name=${base}")
     echo "$(jshon <<<"$json" -e valuation -u)"
   };;
   *) {
